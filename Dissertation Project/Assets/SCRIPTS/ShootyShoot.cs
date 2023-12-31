@@ -9,7 +9,7 @@ public class ShootyShoot : MonoBehaviour
     public GameObject projectile;
     public bool canShoot;
 
-    GameObject pojectileSpawner;
+    public GameObject pojectileSpawner;
 
     public float fireRate, burstRPM, MultiShotSpread;
     public int bulletsPerShot;
@@ -18,7 +18,6 @@ public class ShootyShoot : MonoBehaviour
     private void Awake()
     {
         pojectileSpawner = GameObject.FindGameObjectWithTag("PojSpawn");
-       // inputs = GameObject.FindGameObjectWithTag("Player").GetComponent<Inputs>();
         canShoot = true;
     }
 
@@ -35,7 +34,7 @@ public class ShootyShoot : MonoBehaviour
                 if (/*((weaponID == Inventory.slot1 && Inventory.slot_Active)|| (weaponID == Inventory.slot2 &! Inventory.slot_Active)) && */ canShoot)
                 {
                     canShoot = false;
-                    if(FullAuto)
+                    if (FullAuto)
                     {
                         StartCoroutine(RPMFullAuto());
                     }

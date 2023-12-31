@@ -357,12 +357,18 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.6f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/co-op STUFF/New Controls.cs"
 "Assets/player/Scripts/Inputs.cs"
+"Assets/player/Scripts/Inputs1.cs"
 "Assets/player/Scripts/Movement.cs"
+"Assets/player/Scripts/Movement1.cs"
 "Assets/player/Scripts/Player_Managment.cs"
+"Assets/player/Scripts/Player_Managment1.cs"
+"Assets/player/Shmoovment 1.cs"
 "Assets/player/Shmoovment.cs"
+"Assets/Prefabs/BulletDmg.cs"
 "Assets/SCRIPTS/PlayerStats.cs"
 "Assets/SCRIPTS/ProjectileMovement.cs"
 "Assets/SCRIPTS/ShootyShoot.cs"
+"Assets/SCRIPTS/ShootyShoot1.cs"
 -langversion:9.0
 
 /deterministic

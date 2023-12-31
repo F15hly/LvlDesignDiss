@@ -58,13 +58,19 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.6f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Prefabs\BulletDmg.cs" />
     <Compile Include="Assets\player\Scripts\Inputs.cs" />
     <Compile Include="Assets\player\Scripts\Player_Managment.cs" />
     <Compile Include="Assets\SCRIPTS\ShootyShoot.cs" />
     <Compile Include="Assets\player\Shmoovment.cs" />
+    <Compile Include="Assets\player\Scripts\Inputs1.cs" />
+    <Compile Include="Assets\player\Scripts\Player_Managment1.cs" />
     <Compile Include="Assets\player\Scripts\Movement.cs" />
+    <Compile Include="Assets\SCRIPTS\ShootyShoot1.cs" />
     <Compile Include="Assets\SCRIPTS\ProjectileMovement.cs" />
     <Compile Include="Assets\co-op STUFF\New Controls.cs" />
+    <Compile Include="Assets\player\Scripts\Movement1.cs" />
+    <Compile Include="Assets\player\Shmoovment 1.cs" />
     <Compile Include="Assets\SCRIPTS\PlayerStats.cs" />
   </ItemGroup>
   <ItemGroup>

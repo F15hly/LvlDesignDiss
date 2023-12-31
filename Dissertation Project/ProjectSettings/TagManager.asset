@@ -3,15 +3,21 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - PojSpawn
+  - Holster
+  - Player1
+  - ProjSpawn1
+  - SpawnP2
+  - SpawnP1
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - P2
   - Water
   - UI
-  - 
+  - P1
   - 
   - 
   - 

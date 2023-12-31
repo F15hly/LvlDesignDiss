@@ -5,15 +5,14 @@ using UnityEngine;
 public class Player_Managment : MonoBehaviour
 {
     Inputs inputs;
-    Movement movement;
-    Transform spawn;
+    public Transform spawn;
 
     public int HP;
 
     private void Awake()
     {
         inputs = GetComponent<Inputs>();
-        movement = GetComponent<Movement>();
+        spawn = GameObject.FindGameObjectWithTag("SpawnP1").transform;
         HP = 100;
     }
 
@@ -22,8 +21,13 @@ public class Player_Managment : MonoBehaviour
         inputs.HandleAllInputs();
         if(HP <= 0)
         {
+            GetComponent<CharacterController>().enabled = false;
             transform.position = spawn.position;
             HP = 100;
+        }
+        else
+        {
+            GetComponent<CharacterController>().enabled = true;
         }
     }
 }
