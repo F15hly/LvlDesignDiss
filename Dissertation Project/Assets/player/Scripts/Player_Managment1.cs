@@ -1,11 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class Player_Managment1 : MonoBehaviour
 {
     Inputs1 inputs;
     public Transform spawn;
+    public TextMeshProUGUI HPText;
 
     public int HP;
 
@@ -18,6 +20,7 @@ public class Player_Managment1 : MonoBehaviour
 
     private void Update()
     {
+        HPText.text = "HP-" + HP.ToString();
         inputs.HandleAllInputs();
         if(HP <= 0)
         {

@@ -27,34 +27,30 @@ public class ShootyShoot : MonoBehaviour
     }
     private void Update()
     {
-        //if(!gameObject.GetComponent<WeaponPickUp>().onFloor)
+        if(inputs.shooting)
         {
-            if(inputs.shooting)
+            if (canShoot)
             {
-                if (/*((weaponID == Inventory.slot1 && Inventory.slot_Active)|| (weaponID == Inventory.slot2 &! Inventory.slot_Active)) && */ canShoot)
+                canShoot = false;
+                if (FullAuto)
                 {
-                    canShoot = false;
-                    if (FullAuto)
-                    {
-                        StartCoroutine(RPMFullAuto());
-                    }
-                    if(BurstFire)
-                    {
-                        StartCoroutine(RPMBurst());
-                    }
-                    if(SinlgeShot)
-                    {
-                        inputs.shooting = false;
-                        StartCoroutine(RPMSingle());
-                    }
-                    if(shotGun)
-                    {
-                        StartCoroutine(RPMMulti());
-                    }
+                    StartCoroutine(RPMFullAuto());
+                }
+                if(BurstFire)
+                {
+                    StartCoroutine(RPMBurst());
+                }
+                if(SinlgeShot)
+                {
+                    inputs.shooting = false;
+                    StartCoroutine(RPMSingle());
+                }
+                if(shotGun)
+                {
+                    StartCoroutine(RPMMulti());
                 }
             }
         }
-        
     }
 
     IEnumerator RPMFullAuto()
