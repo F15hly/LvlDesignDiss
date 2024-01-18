@@ -121,7 +121,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c83a3fc841c1b4a41bba99770cadb0f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectileSpeed: 100
+  projectileSpeed: 75
   objHit: {fileID: 0}
   timer: 1
 --- !u!54 &-159804928558634694
