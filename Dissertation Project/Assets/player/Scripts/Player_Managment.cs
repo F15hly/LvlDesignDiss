@@ -10,7 +10,10 @@ public class Player_Managment : MonoBehaviour
     public TextMeshProUGUI HPText;
 
     public int HP;
-
+    private void Start()
+    {
+        Cursor.visible = false;
+    }
     private void Awake()
     {
         inputs = GetComponent<Inputs>();

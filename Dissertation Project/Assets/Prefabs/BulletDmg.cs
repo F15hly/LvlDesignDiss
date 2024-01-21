@@ -17,6 +17,10 @@ public class BulletDmg : MonoBehaviour
             other.GetComponent<Player_Managment1>().HP -= dmg;
             Destroy(gameObject);
         }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
     private void OnCollisionEnter(Collision collision)
     {

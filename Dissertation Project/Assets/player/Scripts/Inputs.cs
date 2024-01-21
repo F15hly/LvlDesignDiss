@@ -18,6 +18,8 @@ public class Inputs : MonoBehaviour
     public bool shooting;
     public bool interacting;
 
+    public bool reset;
+
     private void OnEnable()
     {
         if (shmoovment == null)
@@ -28,6 +30,7 @@ public class Inputs : MonoBehaviour
             shmoovment.Player.ItemSelect.performed += i => inventSlot += 1;
             shmoovment.Player.Fire.performed += i => shooting = i.ReadValueAsButton();
             shmoovment.Player.Action.performed += i => interacting = i.ReadValueAsButton();
+            shmoovment.Player.Reset.performed += i => reset = i.ReadValueAsButton();
         }
         shmoovment.Enable();
     }
@@ -50,6 +53,11 @@ public class Inputs : MonoBehaviour
 
     private void LateUpdate()
     {
+        if(reset)
+        {
+            gameObject.GetComponent<Player_Managment>().HP = 0;
+            reset = false;
+        }
         if(interacting)
         {
             interacting = false;
