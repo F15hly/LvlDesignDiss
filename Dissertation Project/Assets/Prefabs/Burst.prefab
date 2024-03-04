@@ -15,7 +15,6 @@ GameObject:
   - component: {fileID: 3322697785917802894}
   - component: {fileID: -159804928558634694}
   - component: {fileID: 2911226622091510215}
-  - component: {fileID: -4031921150433989971}
   - component: {fileID: 5360424272263007564}
   m_Layer: 0
   m_Name: Burst
@@ -99,14 +98,14 @@ SphereCollider:
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 191
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_LayerOverridePriority: 0
   m_IsTrigger: 1
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
@@ -122,7 +121,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c83a3fc841c1b4a41bba99770cadb0f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectileSpeed: 75
+  projectileSpeed: 150
   objHit: {fileID: 0}
   timer: 1
 --- !u!54 &-159804928558634694
@@ -256,19 +255,6 @@ TrailRenderer:
   m_Autodestruct: 0
   m_Emitting: 1
   m_ApplyActiveColorSpace: 1
---- !u!114 &-4031921150433989971
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1976580126319897574}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 45250571de6e51e4abcdc62a4ff2535a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dmg: 20
 --- !u!136 &5360424272263007564
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -279,14 +265,14 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 191
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Radius: 0.7
   m_Height: 3.1600993

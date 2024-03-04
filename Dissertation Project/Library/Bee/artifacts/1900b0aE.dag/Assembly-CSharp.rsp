@@ -369,6 +369,7 @@
 "Assets/Prefabs/BulletDmg.cs"
 "Assets/SCRIPTS/PlayerStats.cs"
 "Assets/SCRIPTS/ProjectileMovement.cs"
+"Assets/SCRIPTS/ScoreTracker.cs"
 "Assets/SCRIPTS/ShootyShoot.cs"
 "Assets/SCRIPTS/ShootyShoot1.cs"
 -langversion:9.0

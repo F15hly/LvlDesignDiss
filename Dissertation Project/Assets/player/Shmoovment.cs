@@ -80,6 +80,15 @@ public partial class @Shmoovment: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""HeatMap"",
+                    ""type"": ""Button"",
+                    ""id"": ""a3291eb5-3277-4950-a1c0-f604ed7c6c5f"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -192,6 +201,17 @@ public partial class @Shmoovment: IInputActionCollection2, IDisposable
                     ""action"": ""Reset"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""7b3f1ede-20fe-4034-abff-84f2f8facabc"",
+                    ""path"": ""<Keyboard>/m"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard&Mouse"",
+                    ""action"": ""HeatMap"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -267,6 +287,7 @@ public partial class @Shmoovment: IInputActionCollection2, IDisposable
         m_Player_ItemSelect = m_Player.FindAction("ItemSelect", throwIfNotFound: true);
         m_Player_Action = m_Player.FindAction("Action", throwIfNotFound: true);
         m_Player_Reset = m_Player.FindAction("Reset", throwIfNotFound: true);
+        m_Player_HeatMap = m_Player.FindAction("HeatMap", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -334,6 +355,7 @@ public partial class @Shmoovment: IInputActionCollection2, IDisposable
     private readonly InputAction m_Player_ItemSelect;
     private readonly InputAction m_Player_Action;
     private readonly InputAction m_Player_Reset;
+    private readonly InputAction m_Player_HeatMap;
     public struct PlayerActions
     {
         private @Shmoovment m_Wrapper;
@@ -344,6 +366,7 @@ public partial class @Shmoovment: IInputActionCollection2, IDisposable
         public InputAction @ItemSelect => m_Wrapper.m_Player_ItemSelect;
         public InputAction @Action => m_Wrapper.m_Player_Action;
         public InputAction @Reset => m_Wrapper.m_Player_Reset;
+        public InputAction @HeatMap => m_Wrapper.m_Player_HeatMap;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -371,6 +394,9 @@ public partial class @Shmoovment: IInputActionCollection2, IDisposable
             @Reset.started += instance.OnReset;
             @Reset.performed += instance.OnReset;
             @Reset.canceled += instance.OnReset;
+            @HeatMap.started += instance.OnHeatMap;
+            @HeatMap.performed += instance.OnHeatMap;
+            @HeatMap.canceled += instance.OnHeatMap;
         }
 
         private void UnregisterCallbacks(IPlayerActions instance)
@@ -393,6 +419,9 @@ public partial class @Shmoovment: IInputActionCollection2, IDisposable
             @Reset.started -= instance.OnReset;
             @Reset.performed -= instance.OnReset;
             @Reset.canceled -= instance.OnReset;
+            @HeatMap.started -= instance.OnHeatMap;
+            @HeatMap.performed -= instance.OnHeatMap;
+            @HeatMap.canceled -= instance.OnHeatMap;
         }
 
         public void RemoveCallbacks(IPlayerActions instance)
@@ -463,5 +492,6 @@ public partial class @Shmoovment: IInputActionCollection2, IDisposable
         void OnItemSelect(InputAction.CallbackContext context);
         void OnAction(InputAction.CallbackContext context);
         void OnReset(InputAction.CallbackContext context);
+        void OnHeatMap(InputAction.CallbackContext context);
     }
 }

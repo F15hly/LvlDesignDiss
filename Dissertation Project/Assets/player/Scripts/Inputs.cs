@@ -17,8 +17,12 @@ public class Inputs : MonoBehaviour
     public int inventSlot = 1;
     public bool shooting;
     public bool interacting;
-
+    public bool heatMap;
     public bool reset;
+
+    public bool openMap;
+
+    public GameObject HeatCam;
 
     private void OnEnable()
     {
@@ -31,6 +35,7 @@ public class Inputs : MonoBehaviour
             shmoovment.Player.Fire.performed += i => shooting = i.ReadValueAsButton();
             shmoovment.Player.Action.performed += i => interacting = i.ReadValueAsButton();
             shmoovment.Player.Reset.performed += i => reset = i.ReadValueAsButton();
+            shmoovment.Player.HeatMap.performed += i => heatMap = i.ReadValueAsButton();
         }
         shmoovment.Enable();
     }
@@ -61,6 +66,19 @@ public class Inputs : MonoBehaviour
         if(interacting)
         {
             interacting = false;
+        }
+        if(heatMap)
+        {
+            heatMap = false;
+            openMap = !openMap;
+        }
+        if(openMap)
+        {
+            HeatCam.SetActive(true);
+        }
+        if(!openMap)
+        {
+            HeatCam.SetActive(false);
         }
     }
 }

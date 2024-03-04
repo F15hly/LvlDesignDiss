@@ -67,6 +67,7 @@
     <Compile Include="Assets\player\Scripts\Player_Managment1.cs" />
     <Compile Include="Assets\player\Scripts\Movement.cs" />
     <Compile Include="Assets\SCRIPTS\ShootyShoot1.cs" />
+    <Compile Include="Assets\SCRIPTS\ScoreTracker.cs" />
     <Compile Include="Assets\SCRIPTS\ProjectileMovement.cs" />
     <Compile Include="Assets\co-op STUFF\New Controls.cs" />
     <Compile Include="Assets\player\Scripts\Movement1.cs" />

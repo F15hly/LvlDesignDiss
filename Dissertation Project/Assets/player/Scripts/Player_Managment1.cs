@@ -9,6 +9,9 @@ public class Player_Managment1 : MonoBehaviour
     public Transform spawn;
     public TextMeshProUGUI HPText;
 
+    public GameObject HeatSink;
+    public bool defeated;
+
     public int HP;
 
     private void Awake()
@@ -24,9 +27,11 @@ public class Player_Managment1 : MonoBehaviour
         inputs.HandleAllInputs();
         if(HP <= 0)
         {
+            Instantiate(HeatSink, transform.position, Quaternion.Euler(0, 0, 0));
             GetComponent<CharacterController>().enabled = false;
             transform.position = spawn.position;
             HP = 100;
+            defeated = true;
         }
         else
         {

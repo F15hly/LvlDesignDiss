@@ -11,6 +11,8 @@ public class Movement1 : MonoBehaviour
     public Vector3 moveDirection;
     public Vector3 cameraDirection;
 
+    public float xInp, yInp;
+
     public float speed;
     public float gravity = -10;
     public float sens = 15;
@@ -22,7 +24,7 @@ public class Movement1 : MonoBehaviour
     public bool isGrounded;
     public LayerMask groundLayer;
     public Transform groundCheck;
-    public float groundDistance;
+    public float groundDistance, vertSpeed;
 
     public Transform pivot, cam/*, projSpawner*/;
     public float minPiv, maxPiv;
@@ -47,59 +49,72 @@ public class Movement1 : MonoBehaviour
 
     private void Moving()
     {
-        if(inputs.yInp == 0 && inputs.xInp == 0)
-        {
-            anim.SetInteger("Direction", 0);
-        }
-        if(inputs.yInp != 0)
-        {
-            if(inputs.yInp > 0)
-            {
-                anim.SetInteger("Direction", 1);
-                if (inputs.xInp >= inputs.yInp)
-                {
-                    anim.SetInteger("Direction", 3);
-                }
-                if(inputs.xInp <= -inputs.yInp)
-                {
-                    anim.SetInteger("Direction", 4);
-                }
-            }
-            if(inputs.yInp < 0)
-            {
-                anim.SetInteger("Direction", 2);
-                if(inputs.xInp >= -inputs.yInp)
-                {
-                    anim.SetInteger("Direction", 3);
-                }
-                if(inputs.xInp <= inputs.yInp)
-                {
-                    anim.SetInteger("Direction", 4);
-                }
-            }
-        }
-        else if(inputs.xInp != 0)
-        {
-            if(inputs.xInp > 0)
-            {
-                anim.SetInteger("Direction", 3);
-            }
-            if(inputs.xInp < 0)
-            {
-                anim.SetInteger("Direction", 4);
-            }
-        }
+        //if(inputs.yInp == 0 && inputs.xInp == 0)
+        //{
+        //    anim.SetInteger("Direction", 0);
+        //}
+        //if(inputs.yInp != 0)
+        //{
+        //    if(inputs.yInp > 0)
+        //    {
+        //        anim.SetInteger("Direction", 1);
+        //        if (inputs.xInp >= inputs.yInp)
+        //        {
+        //            anim.SetInteger("Direction", 3);
+        //        }
+        //        if(inputs.xInp <= -inputs.yInp)
+        //        {
+        //            anim.SetInteger("Direction", 4);
+        //        }
+        //    }
+        //    if(inputs.yInp < 0)
+        //    {
+        //        anim.SetInteger("Direction", 2);
+        //        if(inputs.xInp >= -inputs.yInp)
+        //        {
+        //            anim.SetInteger("Direction", 3);
+        //        }
+        //        if(inputs.xInp <= inputs.yInp)
+        //        {
+        //            anim.SetInteger("Direction", 4);
+        //        }
+        //    }
+        //}
+        //else if(inputs.xInp != 0)
+        //{
+        //    if(inputs.xInp > 0)
+        //    {
+        //        anim.SetInteger("Direction", 3);
+        //    }
+        //    if(inputs.xInp < 0)
+        //    {
+        //        anim.SetInteger("Direction", 4);
+        //    }
+        //}
+        //
+        //moveDirection = transform.forward * inputs.yInp;
+        //moveDirection = moveDirection + transform.right * inputs.xInp;
+        //
+        //moveDirection.Normalize();
+        //
+        //moveDirection = moveDirection * speed;
+        //moveDirection.y = gravity;
+        //
+        //Vector3 move = moveDirection;
+        //
+        //controller.Move(move * Time.deltaTime * speed);
+        yInp = inputs.yInp;
+        xInp = inputs.xInp;
 
-        moveDirection = transform.forward * inputs.yInp;
-        moveDirection = moveDirection + transform.right * inputs.xInp;
+        moveDirection = transform.forward * yInp;
+        moveDirection = moveDirection + transform.right * xInp;
 
         moveDirection.Normalize();
 
         moveDirection = moveDirection * speed;
-        moveDirection.y = gravity;
+        moveDirection.y = vertSpeed;
 
         Vector3 move = moveDirection;
-
         controller.Move(move * Time.deltaTime * speed);
     }
 
@@ -143,6 +158,7 @@ public class Movement1 : MonoBehaviour
         {
             isGrounded = false;
         }
+        vertSpeed = -gravity * 0.4f;
     }
 
     private void FixedUpdate()

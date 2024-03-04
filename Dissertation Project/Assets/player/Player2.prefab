@@ -1599,8 +1599,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveDirection: {x: 0, y: 0, z: 0}
   cameraDirection: {x: 0, y: 0, z: 0}
-  speed: 1.6
-  gravity: -10
+  xInp: 0
+  yInp: 0
+  speed: 3
+  gravity: 10
   sens: 30
   lookAngX: 0
   lookAngY: 0
@@ -1610,7 +1612,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   groundCheck: {fileID: 2020820408104202102}
-  groundDistance: 0
+  groundDistance: 0.1
+  vertSpeed: 0
   pivot: {fileID: 1111854361}
   cam: {fileID: 1538266571}
   minPiv: -90
@@ -1630,6 +1633,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawn: {fileID: 0}
   HPText: {fileID: 8540171413160294018}
+  HeatSink: {fileID: 2623516622975883689, guid: ee0e68292a67f7a4fb5b47f3b59d601b, type: 3}
+  defeated: 0
   HP: 0
 --- !u!1 &2020820407870200753
 GameObject:
@@ -2661,14 +2666,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponID: 0
   inputs: {fileID: 7763105356949007572}
-  projectile: {fileID: 1976580126319897574, guid: fb0b31403c233f84c97a197c7e727f7e, type: 3}
+  projectile: {fileID: 1976580126319897574, guid: 580aeb19018aa974d8dc636dbe351ec4, type: 3}
   canShoot: 0
+  DMG: 0
+  p1Mask:
+    serializedVersion: 2
+    m_Bits: 64
+  p2Mask:
+    serializedVersion: 2
+    m_Bits: 8
   pojectileSpawner: {fileID: 7050213533175643089}
-  fireRate: 0.4
+  fireRate: 0.15
   burstRPM: 0.1
   MultiShotSpread: 0
   bulletsPerShot: 3
-  BurstFire: 1
+  BurstFire: 0
   SinlgeShot: 0
-  FullAuto: 0
+  FullAuto: 1
   shotGun: 0

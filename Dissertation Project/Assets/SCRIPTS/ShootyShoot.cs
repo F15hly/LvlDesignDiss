@@ -8,6 +8,8 @@ public class ShootyShoot : MonoBehaviour
     public Inputs inputs;
     public GameObject projectile;
     public bool canShoot;
+    public LayerMask p1Mask, p2Mask;
+    public int DMG;
 
     public GameObject pojectileSpawner;
 
@@ -52,9 +54,25 @@ public class ShootyShoot : MonoBehaviour
             }
         }
     }
+    public void bulletFunction()
+    {
+        RaycastHit hit;
+
+        if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, Mathf.Infinity, p1Mask))
+        {
+            Debug.Log("Did Hit");
+            hit.collider.GetComponent<Player_Managment>().HP -= DMG;
+        }
+        else if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, Mathf.Infinity, p2Mask))
+        {
+            Debug.Log("Did Hit");
+            hit.collider.GetComponent<Player_Managment1>().HP -= DMG;
+        }
+    }
 
     IEnumerator RPMFullAuto()
     {
+        bulletFunction();
         Instantiate(projectile, pojectileSpawner.transform);
         yield return new WaitForSeconds(fireRate);
         canShoot = true;
@@ -63,6 +81,7 @@ public class ShootyShoot : MonoBehaviour
     {
         for (int i = 0; i < bulletsPerShot; i++)
         {
+            bulletFunction();
             Instantiate(projectile, pojectileSpawner.transform);
             yield return new WaitForSeconds(burstRPM);
         }
@@ -71,6 +90,7 @@ public class ShootyShoot : MonoBehaviour
     }
     IEnumerator RPMSingle()
     {
+        bulletFunction();
         Instantiate(projectile, pojectileSpawner.transform);
         yield return new WaitForSeconds(fireRate);
         canShoot = true;
@@ -79,6 +99,7 @@ public class ShootyShoot : MonoBehaviour
     {
         for (int i = 0; i < bulletsPerShot; i++)
         {
+            bulletFunction();
             Vector3 spread = new Vector3(Random.Range(-MultiShotSpread, MultiShotSpread), Random.Range(-MultiShotSpread, MultiShotSpread), Random.Range(-MultiShotSpread, MultiShotSpread));
             Instantiate(projectile, pojectileSpawner.transform.position + spread, pojectileSpawner.transform.rotation);
         }

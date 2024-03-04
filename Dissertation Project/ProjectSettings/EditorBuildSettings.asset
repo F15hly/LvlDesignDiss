@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Hight vs cover.unity
+    guid: a1bb0b83a5d173343ab6eed8b4b176e6
+  - enabled: 1
     path: Assets/Scenes/Lvl1.unity
     guid: bc7aea156e6c0ca43b469f10dccd169a
   m_configObjects: {}

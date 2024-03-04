@@ -10,6 +10,7 @@ public class Movement : MonoBehaviour
 
     public Vector3 moveDirection;
     public Vector3 cameraDirection;
+    public float xInp, yInp;
 
     public float speed;
     public float gravity = -10;
@@ -22,7 +23,7 @@ public class Movement : MonoBehaviour
     public bool isGrounded;
     public LayerMask groundLayer;
     public Transform groundCheck;
-    public float groundDistance;
+    public float groundDistance, vertSpeed;
 
     public Transform pivot, cam/*, projSpawner*/;
     public float minPiv, maxPiv;
@@ -47,7 +48,7 @@ public class Movement : MonoBehaviour
 
     private void Moving()
     {
-        if(inputs.yInp == 0 && inputs.xInp == 0)
+        /*if(inputs.yInp == 0 && inputs.xInp == 0)
         {
             anim.SetInteger("Direction", 0);
         }
@@ -100,6 +101,21 @@ public class Movement : MonoBehaviour
 
         Vector3 move = moveDirection;
 
+        controller.Move(move * Time.deltaTime * speed);*/
+        
+        //WASD
+        yInp = inputs.yInp;
+        xInp = inputs.xInp;
+
+        moveDirection = transform.forward * yInp;
+        moveDirection = moveDirection + transform.right * xInp;
+
+        moveDirection.Normalize();
+
+        moveDirection = moveDirection * speed;
+        moveDirection.y = vertSpeed;
+
+        Vector3 move = moveDirection;
         controller.Move(move * Time.deltaTime * speed);
     }
 
@@ -143,6 +159,9 @@ public class Movement : MonoBehaviour
         {
             isGrounded = false;
         }
+
+        vertSpeed = -gravity * 0.4f;
+
     }
 
     private void FixedUpdate()
