@@ -12,6 +12,7 @@ public class ScoreTracker : MonoBehaviour
 
     private void LateUpdate()
     {
+        Cursor.visible = false;
         //p1 = GameObject.FindGameObjectWithTag("Player");
         p2 = GameObject.FindGameObjectWithTag("Player1");
         p1TXT.text = p1Score + "";
@@ -26,7 +27,7 @@ public class ScoreTracker : MonoBehaviour
             p2.GetComponent<Player_Managment1>().defeated = false;
             p2Score += 1;
         }
-        if(p1Score >= 20 || p2Score >= 20)
+        if(p1Score >= 10 || p2Score >= 10)
         {
             Destroy(p1);
             Destroy(p2);
