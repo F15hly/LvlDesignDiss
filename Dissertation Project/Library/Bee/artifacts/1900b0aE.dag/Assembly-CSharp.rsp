@@ -371,10 +371,7 @@
 "Assets/player/Player2-Controller/Scripts/Player_Managment1.cs"
 "Assets/player/Player2-Controller/Shmoovment 1.cs"
 "Assets/SCRIPTS/PlayerStats.cs"
-"Assets/SCRIPTS/ProjectileMovement.cs"
 "Assets/SCRIPTS/ScoreTracker.cs"
-"Assets/SCRIPTS/ShootyShoot.cs"
-"Assets/SCRIPTS/ShootyShoot1.cs"
 -langversion:9.0
 
 /deterministic
