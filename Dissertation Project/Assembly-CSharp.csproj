@@ -58,23 +58,24 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.6f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Prefabs\BulletDmg.cs" />
-    <Compile Include="Assets\player\Player1-controller\Shmoovment.cs" />
+    <Compile Include="Assets\player\Player1-Mnk\Scripts\Gun.cs" />
+    <Compile Include="Assets\player\Player2-Controller\Scripts\Gun1.cs" />
     <Compile Include="Assets\SCRIPTS\ShootyShoot.cs" />
-    <Compile Include="Assets\player\Player1-controller\Scripts\Gun.cs" />
-    <Compile Include="Assets\player\Player2-MnK\Shmoovment 1.cs" />
-    <Compile Include="Assets\player\Player1-controller\Scripts\Player_Managment.cs" />
-    <Compile Include="Assets\player\Player2-MnK\Scripts\Gun1.cs" />
-    <Compile Include="Assets\player\Player1-controller\Scripts\Movement.cs" />
+    <Compile Include="Assets\player\Player1-Mnk\Scripts\Inputs.cs" />
     <Compile Include="Assets\SCRIPTS\ShootyShoot1.cs" />
     <Compile Include="Assets\SCRIPTS\ScoreTracker.cs" />
     <Compile Include="Assets\SCRIPTS\ProjectileMovement.cs" />
+    <Compile Include="Assets\player\Player2-Controller\Scripts\Player_Managment1.cs" />
+    <Compile Include="Assets\player\Player1-Mnk\Shmoovment.cs" />
     <Compile Include="Assets\co-op STUFF\New Controls.cs" />
-    <Compile Include="Assets\player\Player2-MnK\Scripts\Movement1.cs" />
-    <Compile Include="Assets\player\Player2-MnK\Scripts\Player_Managment1.cs" />
-    <Compile Include="Assets\player\Player2-MnK\Scripts\Inputs1.cs" />
-    <Compile Include="Assets\player\Player1-controller\Scripts\Inputs.cs" />
+    <Compile Include="Assets\player\Player2-Controller\Scripts\Inputs1.cs" />
+    <Compile Include="Assets\player\Player2-Controller\Shmoovment 1.cs" />
+    <Compile Include="Assets\player\Player1-Mnk\Scripts\aimAssist.cs" />
+    <Compile Include="Assets\player\Player1-Mnk\Scripts\Player_Managment.cs" />
+    <Compile Include="Assets\player\Player2-Controller\Scripts\aimAssist1.cs" />
+    <Compile Include="Assets\player\Player1-Mnk\Scripts\Movement.cs" />
     <Compile Include="Assets\SCRIPTS\PlayerStats.cs" />
+    <Compile Include="Assets\player\Player2-Controller\Scripts\Movement1.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
