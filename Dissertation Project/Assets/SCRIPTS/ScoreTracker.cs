@@ -13,8 +13,8 @@ public class ScoreTracker : MonoBehaviour
     private void LateUpdate()
     {
         Cursor.visible = false;
-        //p1 = GameObject.FindGameObjectWithTag("Player");
-        p2 = GameObject.FindGameObjectWithTag("Player1");
+        p1 = GameObject.FindGameObjectWithTag("Player");
+        p2 = GameObject.FindGameObjectWithTag("Player2");
         p1TXT.text = p1Score + "";
         p2TXT.text = p2Score + "";
         if(p1.GetComponent<Player_Managment>().defeated)

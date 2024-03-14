@@ -59,19 +59,21 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Prefabs\BulletDmg.cs" />
-    <Compile Include="Assets\player\Scripts\Inputs.cs" />
-    <Compile Include="Assets\player\Scripts\Player_Managment.cs" />
+    <Compile Include="Assets\player\Player1-controller\Shmoovment.cs" />
     <Compile Include="Assets\SCRIPTS\ShootyShoot.cs" />
-    <Compile Include="Assets\player\Shmoovment.cs" />
-    <Compile Include="Assets\player\Scripts\Inputs1.cs" />
-    <Compile Include="Assets\player\Scripts\Player_Managment1.cs" />
-    <Compile Include="Assets\player\Scripts\Movement.cs" />
+    <Compile Include="Assets\player\Player1-controller\Scripts\Gun.cs" />
+    <Compile Include="Assets\player\Player2-MnK\Shmoovment 1.cs" />
+    <Compile Include="Assets\player\Player1-controller\Scripts\Player_Managment.cs" />
+    <Compile Include="Assets\player\Player2-MnK\Scripts\Gun1.cs" />
+    <Compile Include="Assets\player\Player1-controller\Scripts\Movement.cs" />
     <Compile Include="Assets\SCRIPTS\ShootyShoot1.cs" />
     <Compile Include="Assets\SCRIPTS\ScoreTracker.cs" />
     <Compile Include="Assets\SCRIPTS\ProjectileMovement.cs" />
     <Compile Include="Assets\co-op STUFF\New Controls.cs" />
-    <Compile Include="Assets\player\Scripts\Movement1.cs" />
-    <Compile Include="Assets\player\Shmoovment 1.cs" />
+    <Compile Include="Assets\player\Player2-MnK\Scripts\Movement1.cs" />
+    <Compile Include="Assets\player\Player2-MnK\Scripts\Player_Managment1.cs" />
+    <Compile Include="Assets\player\Player2-MnK\Scripts\Inputs1.cs" />
+    <Compile Include="Assets\player\Player1-controller\Scripts\Inputs.cs" />
     <Compile Include="Assets\SCRIPTS\PlayerStats.cs" />
   </ItemGroup>
   <ItemGroup>
