@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class aimAssist : MonoBehaviour
+public class AimAssist : MonoBehaviour
 {
     public LayerMask mask;
     Movement movement;

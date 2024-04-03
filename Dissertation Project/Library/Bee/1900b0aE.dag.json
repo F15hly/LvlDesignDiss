@@ -21811,7 +21811,7 @@
         "Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll",
         "Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll",
         "Assets/co-op STUFF/New Controls.cs",
-        "Assets/player/Player1-Mnk/Scripts/aimAssist.cs",
+        "Assets/player/Player1-Mnk/Scripts/AimAssist.cs",
         "Assets/player/Player1-Mnk/Scripts/Gun.cs",
         "Assets/player/Player1-Mnk/Scripts/Inputs.cs",
         "Assets/player/Player1-Mnk/Scripts/Movement.cs",

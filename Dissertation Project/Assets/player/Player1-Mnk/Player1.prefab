@@ -714,10 +714,10 @@ GameObject:
   - component: {fileID: 1855778942512833313}
   - component: {fileID: 7283089822188954932}
   - component: {fileID: 535272044539623793}
-  - component: {fileID: 65321633316249857}
   - component: {fileID: 4459817528845658987}
   - component: {fileID: 1054975965290421426}
   - component: {fileID: 1774094085181853588}
+  - component: {fileID: 1494668682738638854}
   m_Layer: 6
   m_Name: Player1
   m_TagString: Player
@@ -735,7 +735,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 102.926636, y: -23.51244, z: -20.562506}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8459599911947894916}
@@ -844,23 +844,6 @@ MonoBehaviour:
   HeatSink: {fileID: 2623516622975883689, guid: 647d5fdbbd1c5584f97ed73193401059, type: 3}
   HP: 100
   defeated: 0
---- !u!114 &65321633316249857
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9200470120092481559}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 28922b15d5f24e244ad3cc88516efe54, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mask:
-    serializedVersion: 2
-    m_Bits: 8
-  defaultSens: 1
-  strength: 0.6
 --- !u!33 &4459817528845658987
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -934,3 +917,20 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1494668682738638854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9200470120092481559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28922b15d5f24e244ad3cc88516efe54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mask:
+    serializedVersion: 2
+    m_Bits: 8
+  defaultSens: 1
+  strength: 0.7
