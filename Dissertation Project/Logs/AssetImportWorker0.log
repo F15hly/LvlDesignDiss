@@ -15,7 +15,7 @@ C:/LvlDesignDiss/Dissertation Project
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-49958
+58872
 Successfully changed project path to: C:/LvlDesignDiss/Dissertation Project
 C:/LvlDesignDiss/Dissertation Project
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,11 +49,11 @@ C:/LvlDesignDiss/Dissertation Project
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [2496] Host "[IP] 192.168.1.193 [Port] 0 [Flags] 2 [Guid] 243615896 [EditorId] 243615896 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-SP81DEDO) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [13812] Host "[IP] 10.167.122.12 [Port] 0 [Flags] 2 [Guid] 463435783 [EditorId] 463435783 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-SP81DEDO) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [2496] Host "[IP] 192.168.1.193 [Port] 0 [Flags] 2 [Guid] 243615896 [EditorId] 243615896 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-SP81DEDO) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [13812] Host "[IP] 10.167.122.12 [Port] 0 [Flags] 2 [Guid] 463435783 [EditorId] 463435783 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-SP81DEDO) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 15.12 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 7.41 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.6f1 (b9e6e7e9fa2d)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.6f1/Editor/Data/Resources/UnitySubsystems
@@ -69,49 +69,49 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.6f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.6f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.6f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56148
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56104
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.6f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.6f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.021296 seconds.
-- Loaded All Assemblies, in  0.743 seconds
+Registered in 0.009115 seconds.
+- Loaded All Assemblies, in  0.382 seconds
 Native extension for WindowsStandalone target not found
 [usbmuxd] Start listen thread
 [usbmuxd] Listen thread started
 [usbmuxd] Send listen message
 Native extension for iOS target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.675 seconds
-Domain Reload Profiling: 1415ms
-	BeginReloadAssembly (186ms)
+- Finished resetting the current domain, in  0.336 seconds
+Domain Reload Profiling: 716ms
+	BeginReloadAssembly (102ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (66ms)
-	RebuildNativeTypeToScriptingClass (31ms)
-	initialDomainReloadingComplete (154ms)
-	LoadAllAssembliesAndSetupDomain (302ms)
-		LoadAssemblies (183ms)
+	RebuildCommonClasses (39ms)
+	RebuildNativeTypeToScriptingClass (15ms)
+	initialDomainReloadingComplete (69ms)
+	LoadAllAssembliesAndSetupDomain (155ms)
+		LoadAssemblies (98ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (287ms)
-			TypeCache.Refresh (285ms)
-				TypeCache.ScanAssembly (261ms)
-			ScanForSourceGeneratedMonoScriptInfo (1ms)
-			ResolveRequiredComponents (1ms)
-	FinalizeReload (676ms)
+		AnalyzeDomain (149ms)
+			TypeCache.Refresh (148ms)
+				TypeCache.ScanAssembly (137ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (337ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (516ms)
+		SetupLoadedEditorAssemblies (273ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (66ms)
-			SetLoadedEditorAssemblies (19ms)
+			InitializePlatformSupportModulesInManaged (36ms)
+			SetLoadedEditorAssemblies (6ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (4ms)
-			ProcessInitializeOnLoadAttributes (302ms)
-			ProcessInitializeOnLoadMethodAttributes (125ms)
+			BeforeProcessingInitializeOnLoad (3ms)
+			ProcessInitializeOnLoadAttributes (164ms)
+			ProcessInitializeOnLoadMethodAttributes (65ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -121,52 +121,52 @@ Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\LvlDesignDiss\Dissertation Project\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\LvlDesignDiss\Dissertation Project\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  1.589 seconds
-Refreshing native plugins compatible for Editor in 6.75 ms, found 3 plugins.
+- Loaded All Assemblies, in  0.960 seconds
+Refreshing native plugins compatible for Editor in 4.28 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for iOS target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.131 seconds
-Domain Reload Profiling: 2713ms
-	BeginReloadAssembly (289ms)
+- Finished resetting the current domain, in  0.945 seconds
+Domain Reload Profiling: 1902ms
+	BeginReloadAssembly (148ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (18ms)
+		DisableScriptedObjects (6ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (46ms)
-	RebuildCommonClasses (63ms)
-	RebuildNativeTypeToScriptingClass (26ms)
-	initialDomainReloadingComplete (106ms)
-	LoadAllAssembliesAndSetupDomain (1098ms)
-		LoadAssemblies (459ms)
+		CreateAndSetChildDomain (24ms)
+	RebuildCommonClasses (35ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (53ms)
+	LoadAllAssembliesAndSetupDomain (708ms)
+		LoadAssemblies (287ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (747ms)
-			TypeCache.Refresh (695ms)
-				TypeCache.ScanAssembly (667ms)
-			ScanForSourceGeneratedMonoScriptInfo (43ms)
-			ResolveRequiredComponents (9ms)
-	FinalizeReload (1131ms)
+		AnalyzeDomain (488ms)
+			TypeCache.Refresh (456ms)
+				TypeCache.ScanAssembly (435ms)
+			ScanForSourceGeneratedMonoScriptInfo (27ms)
+			ResolveRequiredComponents (6ms)
+	FinalizeReload (945ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (822ms)
+		SetupLoadedEditorAssemblies (708ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (50ms)
-			SetLoadedEditorAssemblies (14ms)
+			InitializePlatformSupportModulesInManaged (42ms)
+			SetLoadedEditorAssemblies (8ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (161ms)
-			ProcessInitializeOnLoadAttributes (569ms)
-			ProcessInitializeOnLoadMethodAttributes (19ms)
-			AfterProcessingInitializeOnLoad (10ms)
+			BeforeProcessingInitializeOnLoad (115ms)
+			ProcessInitializeOnLoadAttributes (505ms)
+			ProcessInitializeOnLoadMethodAttributes (27ms)
+			AfterProcessingInitializeOnLoad (11ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (10ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
-Refreshing native plugins compatible for Editor in 6.50 ms, found 3 plugins.
+		AwakeInstancesAfterBackupRestoration (12ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
+Refreshing native plugins compatible for Editor in 5.80 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3477 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 37 unused Assets / (29.6 KB). Loaded Objects now: 3947.
 Memory consumption went from 135.0 MB to 135.0 MB.
-Total: 5.156300 ms (FindLiveObjects: 0.225300 ms CreateObjectMapping: 0.112800 ms MarkObjects: 4.682100 ms  DeleteObjects: 0.134500 ms)
+Total: 4.051400 ms (FindLiveObjects: 0.299200 ms CreateObjectMapping: 0.137700 ms MarkObjects: 3.530000 ms  DeleteObjects: 0.083100 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -183,17 +183,193 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 392.867305 seconds.
-  path: Assets/PolygonPrototype/Models/SM_Buildings_Ramp_45_1x1_01.fbx
-  artifactKey: Guid(e773e5e2f9670824bad8b836f8425d2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PolygonPrototype/Models/SM_Buildings_Ramp_45_1x1_01.fbx using Guid(e773e5e2f9670824bad8b836f8425d2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '624306a13cb08da9eed9b019fd2255f7') in 0.247648 seconds
+  Time since last request: 2599.649593 seconds.
+  path: Assets/PolygonPrototype/Prefabs/Generic
+  artifactKey: Guid(f92fbb5a2c7f4bc4fb749efa0cf872e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonPrototype/Prefabs/Generic using Guid(f92fbb5a2c7f4bc4fb749efa0cf872e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b10e4d97bede45dac945d68756d7a1b0') in 0.004339 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 179.014640 seconds.
+  path: Assets/PolygonPrototype/Models/Characters.fbx
+  artifactKey: Guid(b5f71c859f9f9bf41badda8a4650082c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonPrototype/Models/Characters.fbx using Guid(b5f71c859f9f9bf41badda8a4650082c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ed689d01518c55393576b6cc98cd6ae') in 0.324470 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 128
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/PolygonPrototype/Prefabs/Character_FPS_Hands/Standard/Character_FPS_Arms_Standard_03.prefab
+  artifactKey: Guid(664956de28ada604d8109484559e4751) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonPrototype/Prefabs/Character_FPS_Hands/Standard/Character_FPS_Arms_Standard_03.prefab using Guid(664956de28ada604d8109484559e4751) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dcb9554fdb93db79b472e774944d2fff') in 0.059378 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 122
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/PolygonPrototype/Prefabs/Character_FPS_Hands/Standard/Character_FPS_Arms_Standard_01.prefab
+  artifactKey: Guid(63b914be36748c74ba47c08297bea915) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonPrototype/Prefabs/Character_FPS_Hands/Standard/Character_FPS_Arms_Standard_01.prefab using Guid(63b914be36748c74ba47c08297bea915) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8902cd6165c9834b1bea9d73d926c602') in 0.030966 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 122
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/PolygonPrototype/Prefabs/Character_FPS_Hands/FiveFinger/Character_FPS_Hands_FiveFinger_01.prefab
+  artifactKey: Guid(cffb3216c7854ab418a0045b21440088) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonPrototype/Prefabs/Character_FPS_Hands/FiveFinger/Character_FPS_Hands_FiveFinger_01.prefab using Guid(cffb3216c7854ab418a0045b21440088) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9276b78e6d881e8af0c9c4d555d3e00') in 0.042398 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 154
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/PolygonPrototype/Prefabs/Characters/FixedScale/Character_Female_NoFace_01_FixedScale.prefab
+  artifactKey: Guid(509223f9ef5fc8343ac57e8c8f8a7550) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonPrototype/Prefabs/Characters/FixedScale/Character_Female_NoFace_01_FixedScale.prefab using Guid(509223f9ef5fc8343ac57e8c8f8a7550) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea5cb31f6224ed458ded71b674e754d2') in 0.042636 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 150
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/PolygonPrototype/Prefabs/Character_FPS_Hands/FiveFinger/Character_FPS_Arms_FiveFinger_03.prefab
+  artifactKey: Guid(fd5e831e3540bb449acb00ec35e888ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonPrototype/Prefabs/Character_FPS_Hands/FiveFinger/Character_FPS_Arms_FiveFinger_03.prefab using Guid(fd5e831e3540bb449acb00ec35e888ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b58d80a4c8f99806057eddc8ac2b0016') in 0.032617 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 154
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/PolygonPrototype/Prefabs/Characters/FixedScale/Character_Dummy_Female_01_FixedScale.prefab
+  artifactKey: Guid(c25ecc65e2662d6468bcba4b42a1ab5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonPrototype/Prefabs/Characters/FixedScale/Character_Dummy_Female_01_FixedScale.prefab using Guid(c25ecc65e2662d6468bcba4b42a1ab5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3474b79563d4b0e9dc93c89a01cf4682') in 0.030199 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 150
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/PolygonPrototype/Prefabs/Character_FPS_Hands/Standard/Character_FPS_Hands_Standard_01.prefab
+  artifactKey: Guid(f68be8d3fbd733544b5bc54f8afe8b72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonPrototype/Prefabs/Character_FPS_Hands/Standard/Character_FPS_Hands_Standard_01.prefab using Guid(f68be8d3fbd733544b5bc54f8afe8b72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9437e237bfbeee107f5bc64fcbc8cec5') in 0.029079 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 122
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/PolygonPrototype/Prefabs/Characters/FixedScale/Character_Dummy_Male_01_FixedScale.prefab
+  artifactKey: Guid(dc494f42aedd60c4a85be02ec2b22ec4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonPrototype/Prefabs/Characters/FixedScale/Character_Dummy_Male_01_FixedScale.prefab using Guid(dc494f42aedd60c4a85be02ec2b22ec4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c216668d4b0ee11ffa2057c478735ade') in 0.032409 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 150
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/PolygonPrototype/Prefabs/Characters/FixedScale/Character_Female_Face_01_FixedScale.prefab
+  artifactKey: Guid(16d414309aee5534bb9124c86367882c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonPrototype/Prefabs/Characters/FixedScale/Character_Female_Face_01_FixedScale.prefab using Guid(16d414309aee5534bb9124c86367882c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9398be539155fbe063f5929f449d34be') in 0.036975 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 150
+========================================================================
+Received Import Request.
+  Time since last request: 0.000196 seconds.
+  path: Assets/PolygonPrototype/Prefabs/Character_FPS_Hands/FiveFinger/Character_FPS_Arms_FiveFinger_01.prefab
+  artifactKey: Guid(cf8e268b32ddbee488f1327f1fd8c5d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonPrototype/Prefabs/Character_FPS_Hands/FiveFinger/Character_FPS_Arms_FiveFinger_01.prefab using Guid(cf8e268b32ddbee488f1327f1fd8c5d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '505fad943d42ea505169a048067dc561') in 0.030443 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 154
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/PolygonPrototype/Models/FixedScaleCharacters/Characters.fbx
+  artifactKey: Guid(43b8bc78a133b604f86dec829cd8321e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonPrototype/Models/FixedScaleCharacters/Characters.fbx using Guid(43b8bc78a133b604f86dec829cd8321e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ebb8235722e75504f13676ceaf735a6') in 0.103150 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 148
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/PolygonPrototype/Models/Character_FPSHands_01.fbx
+  artifactKey: Guid(3c34d2567f522774bb262a3cfdbc15ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonPrototype/Models/Character_FPSHands_01.fbx using Guid(3c34d2567f522774bb262a3cfdbc15ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94f7ff1f86b0fa1cfd301db2e21c694c') in 0.069021 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 120
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/PolygonPrototype/Prefabs/Character_FPS_Hands/Standard/Character_FPS_Arms_Standard_02.prefab
+  artifactKey: Guid(dbf18624c8b697a48bf91f3016035764) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonPrototype/Prefabs/Character_FPS_Hands/Standard/Character_FPS_Arms_Standard_02.prefab using Guid(dbf18624c8b697a48bf91f3016035764) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88115b78b287f65668d6e99d0a707aab') in 0.025534 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 122
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/PolygonPrototype/Prefabs/Character_FPS_Hands/FiveFinger/Character_FPS_Arms_FiveFinger_02.prefab
+  artifactKey: Guid(be265e142a7ab1a40b4e9367488943f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonPrototype/Prefabs/Character_FPS_Hands/FiveFinger/Character_FPS_Arms_FiveFinger_02.prefab using Guid(be265e142a7ab1a40b4e9367488943f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07f3bd044d398769b84306e75cc133e7') in 0.028818 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 154
+========================================================================
+Received Import Request.
+  Time since last request: 0.649568 seconds.
+  path: Assets/Assets/Low Poly Environment Starter Kit/Prefabs/HDRP/Terrains/Canyon.prefab
+  artifactKey: Guid(8a93137e6cda79845a780287a073a186) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Assets/Low Poly Environment Starter Kit/Prefabs/HDRP/Terrains/Canyon.prefab using Guid(8a93137e6cda79845a780287a073a186) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a0f134c2054567ce69db32b670fc270') in 0.002656 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 7
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000038 seconds.
-  path: Assets/PolygonPrototype/Models/SM_Buildings_Ramp_45_1x1_01P.fbx
-  artifactKey: Guid(9062750ab2c50154d97e419667e77b0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PolygonPrototype/Models/SM_Buildings_Ramp_45_1x1_01P.fbx using Guid(9062750ab2c50154d97e419667e77b0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd72cf59c8a3b763f27e4a89202975cd') in 0.032673 seconds
+  Time since last request: 0.293039 seconds.
+  path: Assets/PolygonPrototype/Prefabs/Characters/FixedScale/Character_Male_Face_01_FixedScale.prefab
+  artifactKey: Guid(bb0546db0edf6294fbf54f2aa895674b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonPrototype/Prefabs/Characters/FixedScale/Character_Male_Face_01_FixedScale.prefab using Guid(bb0546db0edf6294fbf54f2aa895674b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a7a242f6950f5c789e00ced8cc2eeeb') in 0.016681 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 150
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/PolygonPrototype/Prefabs/Characters/FixedScale/Character_Male_NoFace_01_FixedScale.prefab
+  artifactKey: Guid(e16e767da6f23f04687bbea5851a2391) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonPrototype/Prefabs/Characters/FixedScale/Character_Male_NoFace_01_FixedScale.prefab using Guid(e16e767da6f23f04687bbea5851a2391) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fe2ec2d19d440ef442247afa5fd9be0') in 0.023399 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 150
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/PolygonPrototype/Models/SM_Icon_Camera_01.fbx
+  artifactKey: Guid(a5bd27fd6394e67488b3d6cc200bce64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonPrototype/Models/SM_Icon_Camera_01.fbx using Guid(a5bd27fd6394e67488b3d6cc200bce64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8e9956d65c9a1bf7e15a1d3dc78f0ed') in 0.019968 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/PolygonPrototype/Prefabs/Characters/FixedScale/SM_Chr_Attach_Female_Hair_01_FixedScale.prefab
+  artifactKey: Guid(8ecbd5497b0afef4c8a6aac0626d81ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonPrototype/Prefabs/Characters/FixedScale/SM_Chr_Attach_Female_Hair_01_FixedScale.prefab using Guid(8ecbd5497b0afef4c8a6aac0626d81ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f1c6f930bb61502a57b835de57979d8') in 0.026905 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/PolygonPrototype/Models/SM_Icon_Candy_01.fbx
+  artifactKey: Guid(b2773e189f71686448858b1ac36b4b55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonPrototype/Models/SM_Icon_Candy_01.fbx using Guid(b2773e189f71686448858b1ac36b4b55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da6c97c055b2d17535b5374f65f74ee7') in 0.019369 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/PolygonPrototype/Prefabs/Characters/FixedScale/SM_Chr_Attach_Male_Hair_01_FixedScale.prefab
+  artifactKey: Guid(354451eee28210e4a92774b4b49e5782) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonPrototype/Prefabs/Characters/FixedScale/SM_Chr_Attach_Male_Hair_01_FixedScale.prefab using Guid(354451eee28210e4a92774b4b49e5782) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b12a20743820021076bc4e39a6dd7bfb') in 0.023395 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 1813.212381 seconds.
+  path: Assets/PolygonPrototype/Models/SM_Icon_Gun_01.fbx
+  artifactKey: Guid(97631170b86e7be47b9c866dbbe6cbda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/PolygonPrototype/Models/SM_Icon_Gun_01.fbx using Guid(97631170b86e7be47b9c866dbbe6cbda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27e6d080ae343d517e5796b638ca19c2') in 0.027553 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 7
