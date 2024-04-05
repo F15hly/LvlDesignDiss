@@ -5,7 +5,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638390186663306271
+      ticks: 638408347620566621
     m_Hash: 1538165992
   m_LockFileStatus:
     m_FilePath: C:/LvlDesignDiss/Dissertation Project/Packages/packages-lock.json
@@ -13,7 +13,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638390186663306271
+      ticks: 638408347620566621
     m_Hash: 1910608628
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
@@ -326,11 +326,15 @@ m_ResolvedPackages:
     - 1.7.0
     - 1.8.0-pre.1
     - 1.8.0-pre.2
+    - 1.8.0
+    - 1.8.1
     compatible:
     - 1.6.3
     - 1.7.0
     - 1.8.0-pre.1
     - 1.8.0-pre.2
+    - 1.8.0
+    - 1.8.1
     recommended: 1.6.3
     deprecated: []
   dependencies:
@@ -3022,7 +3026,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: 
-  type: 
+  type: asset
   description: Code editor integration for supporting Visual Studio Code as code
     editor for unity. Adds support for generating csproj files for intellisense purposes,
     auto discovery of installations, etc.
@@ -3090,7 +3094,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: 
-  type: 
+  type: asset
   description: 'The editor coroutines package allows developers to start constructs
     similar to Unity''s monobehaviour based coroutines within the editor using abitrary
     objects. '
@@ -3467,7 +3471,7 @@ m_ResolvedPackages:
     email: 
     url: 
   category: 
-  type: asset
+  type: 
   description: A framework for making any serializable field a setting, complete
     with a pre-built settings interface.
   status: 0

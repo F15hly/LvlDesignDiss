@@ -67,10 +67,10 @@
     <Compile Include="Assets\co-op STUFF\New Controls.cs" />
     <Compile Include="Assets\player\Player2-Controller\Scripts\Inputs1.cs" />
     <Compile Include="Assets\player\Player2-Controller\Shmoovment 1.cs" />
+    <Compile Include="Assets\player\Player1-Mnk\Scripts\aimAssist.cs" />
     <Compile Include="Assets\player\Player1-Mnk\Scripts\Player_Managment.cs" />
     <Compile Include="Assets\player\Player2-Controller\Scripts\aimAssist1.cs" />
     <Compile Include="Assets\player\Player1-Mnk\Scripts\Movement.cs" />
-    <Compile Include="Assets\player\Player1-Mnk\Scripts\AimAssist.cs" />
     <Compile Include="Assets\SCRIPTS\PlayerStats.cs" />
     <Compile Include="Assets\player\Player2-Controller\Scripts\Movement1.cs" />
   </ItemGroup>

@@ -358,7 +358,7 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.6f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.6f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/co-op STUFF/New Controls.cs"
-"Assets/player/Player1-Mnk/Scripts/AimAssist.cs"
+"Assets/player/Player1-Mnk/Scripts/aimAssist.cs"
 "Assets/player/Player1-Mnk/Scripts/Gun.cs"
 "Assets/player/Player1-Mnk/Scripts/Inputs.cs"
 "Assets/player/Player1-Mnk/Scripts/Movement.cs"
