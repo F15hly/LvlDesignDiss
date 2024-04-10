@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58a942c85c7795747895347a55affdb7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DMG: 20
+  DMG: 60
   inputs: {fileID: 1855778942512833313}
   canShoot: 0
   shot: 0
@@ -606,7 +606,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 63
+    m_Bits: 191
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -735,7 +735,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 102.926636, y: -23.51244, z: -20.562506}
-  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
+  m_LocalScale: {x: 0.65, y: 0.65, z: 0.65}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8459599911947894916}
@@ -764,8 +764,8 @@ CharacterController:
   serializedVersion: 3
   m_Height: 2
   m_Radius: 0.5
-  m_SlopeLimit: 45
-  m_StepOffset: 0.05
+  m_SlopeLimit: 60
+  m_StepOffset: 0.6
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
@@ -839,11 +839,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fc5ca2fc9c49f74a80bacbf8c6eed67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawn:
-  - {fileID: 0}
+  spawn: []
   currentspawn: {fileID: 0}
   HPText: {fileID: 1244055720321664263}
-  HeatSink: {fileID: 2623516622975883689, guid: 647d5fdbbd1c5584f97ed73193401059, type: 3}
+  HeatSigDeath: {fileID: 2623516622975883689, guid: 7b0e77f26ae803a4cb22c0f50ac0d6a3, type: 3}
+  HeatSigWalk: {fileID: 2623516622975883689, guid: 647d5fdbbd1c5584f97ed73193401059, type: 3}
   HP: 100
   defeated: 0
 --- !u!33 &4459817528845658987
@@ -935,4 +935,4 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   defaultSens: 1
-  strength: 0.7
+  strength: 0.3

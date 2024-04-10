@@ -10,7 +10,7 @@ public class Player_Managment1 : MonoBehaviour
     public GameObject currentspawn;
     public TextMeshProUGUI HPText;
 
-    public GameObject HeatSink;
+    public GameObject HeatSigDeath, HeatSigWalk;
     public bool defeated;
 
     public int HP;
@@ -20,6 +20,7 @@ public class Player_Managment1 : MonoBehaviour
         inputs = GetComponent<Inputs1>();
         spawn = GameObject.FindGameObjectsWithTag("Spawn");
         HP = 100;
+        StartCoroutine(TrackMovement());
     }
 
     private void Update()
@@ -30,7 +31,7 @@ public class Player_Managment1 : MonoBehaviour
         {
             HP = 100;
             GetComponent<CharacterController>().enabled = false;
-            Instantiate(HeatSink, transform.position, Quaternion.Euler(0, 0, 0));
+            Instantiate(HeatSigDeath, new Vector3(transform.position.x,21, transform.position.z), Quaternion.Euler(0, 0, 0));
             defeated = true;
             currentspawn = spawn[Random.Range(0, spawn.Length)];
             if (currentspawn.GetComponentInChildren<SpawnOccupied>().occupied)
@@ -43,5 +44,12 @@ public class Player_Managment1 : MonoBehaviour
         {
             GetComponent<CharacterController>().enabled = true;
         }
+    }
+
+    IEnumerator TrackMovement()
+    {
+        yield return new WaitForSeconds(0.05f);
+        Instantiate(HeatSigWalk, new Vector3(transform.position.x,20, transform.position.z), Quaternion.Euler(0, 0, 0));
+        StartCoroutine(TrackMovement());
     }
 }

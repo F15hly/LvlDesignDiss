@@ -231,7 +231,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 39.837925, y: 0.099999905, z: 39.72929}
-  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
+  m_LocalScale: {x: 0.65, y: 0.65, z: 0.65}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2020820408104202102}
@@ -261,8 +261,8 @@ CharacterController:
   serializedVersion: 3
   m_Height: 2.2
   m_Radius: 0.5
-  m_SlopeLimit: 45
-  m_StepOffset: 0.05
+  m_SlopeLimit: 60
+  m_StepOffset: 0.6
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
@@ -367,7 +367,8 @@ MonoBehaviour:
   - {fileID: 0}
   currentspawn: {fileID: 0}
   HPText: {fileID: 8540171413160294018}
-  HeatSink: {fileID: 2623516622975883689, guid: ee0e68292a67f7a4fb5b47f3b59d601b, type: 3}
+  HeatSigDeath: {fileID: 2623516622975883689, guid: 7b0e77f26ae803a4cb22c0f50ac0d6a3, type: 3}
+  HeatSigWalk: {fileID: 2623516622975883689, guid: ee0e68292a67f7a4fb5b47f3b59d601b, type: 3}
   defeated: 0
   HP: 0
 --- !u!33 &7598629105648038749
@@ -631,7 +632,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d729dbc4f1a43ac4e854adebbe343343, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DMG: 20
+  DMG: 60
   inputs: {fileID: 7763105356949007572}
   canShoot: 0
   shot: 0
