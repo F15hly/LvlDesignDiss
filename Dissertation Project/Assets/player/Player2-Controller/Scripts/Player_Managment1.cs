@@ -6,7 +6,8 @@ using TMPro;
 public class Player_Managment1 : MonoBehaviour
 {
     Inputs1 inputs;
-    public Transform spawn;
+    public GameObject[] spawn;
+    public GameObject currentspawn;
     public TextMeshProUGUI HPText;
 
     public GameObject HeatSink;
@@ -14,11 +15,10 @@ public class Player_Managment1 : MonoBehaviour
 
     public int HP;
 
-    private void OnEnable()
+    private void Awake()
     {
         inputs = GetComponent<Inputs1>();
-        spawn = GameObject.FindGameObjectWithTag("SpawnP2").transform;
-        transform.position = spawn.position;
+        spawn = GameObject.FindGameObjectsWithTag("Spawn");
         HP = 100;
     }
 
@@ -26,13 +26,18 @@ public class Player_Managment1 : MonoBehaviour
     {
         HPText.text = "HP-" + HP.ToString();
         inputs.HandleAllInputs();
-        if(HP <= 0)
+        if (HP <= 0)
         {
-            Instantiate(HeatSink, transform.position, Quaternion.Euler(0, 0, 0));
-            GetComponent<CharacterController>().enabled = false;
-            transform.position = spawn.position;
             HP = 100;
+            GetComponent<CharacterController>().enabled = false;
+            Instantiate(HeatSink, transform.position, Quaternion.Euler(0, 0, 0));
             defeated = true;
+            currentspawn = spawn[Random.Range(0, spawn.Length)];
+            if (currentspawn.GetComponentInChildren<SpawnOccupied>().occupied)
+            {
+                currentspawn = spawn[Random.Range(0, spawn.Length)];
+            }
+            transform.position = new Vector3(currentspawn.transform.position.x, currentspawn.transform.position.y + 2, currentspawn.transform.position.z);
         }
         else
         {

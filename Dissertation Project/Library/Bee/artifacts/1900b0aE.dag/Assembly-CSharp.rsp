@@ -372,6 +372,7 @@
 "Assets/player/Player2-Controller/Shmoovment 1.cs"
 "Assets/SCRIPTS/PlayerStats.cs"
 "Assets/SCRIPTS/ScoreTracker.cs"
+"Assets/SCRIPTS/SpawnOccupied.cs"
 -langversion:9.0
 
 /deterministic

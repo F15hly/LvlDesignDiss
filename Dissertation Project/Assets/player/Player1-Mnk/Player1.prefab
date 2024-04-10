@@ -756,7 +756,7 @@ CharacterController:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 128
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
@@ -765,7 +765,7 @@ CharacterController:
   m_Height: 2
   m_Radius: 0.5
   m_SlopeLimit: 45
-  m_StepOffset: 0.3
+  m_StepOffset: 0.05
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
@@ -810,7 +810,7 @@ MonoBehaviour:
   cameraDirection: {x: 0, y: 0, z: 0}
   xInp: 0
   yInp: 0
-  speed: 3
+  speed: 2.3
   gravity: 10
   sens: 7
   lookAngX: 0
@@ -839,7 +839,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fc5ca2fc9c49f74a80bacbf8c6eed67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawn: {fileID: 0}
+  spawn:
+  - {fileID: 0}
+  currentspawn: {fileID: 0}
   HPText: {fileID: 1244055720321664263}
   HeatSink: {fileID: 2623516622975883689, guid: 647d5fdbbd1c5584f97ed73193401059, type: 3}
   HP: 100

@@ -71,6 +71,7 @@
     <Compile Include="Assets\player\Player1-Mnk\Scripts\Player_Managment.cs" />
     <Compile Include="Assets\player\Player2-Controller\Scripts\aimAssist1.cs" />
     <Compile Include="Assets\player\Player1-Mnk\Scripts\Movement.cs" />
+    <Compile Include="Assets\SCRIPTS\SpawnOccupied.cs" />
     <Compile Include="Assets\SCRIPTS\PlayerStats.cs" />
     <Compile Include="Assets\player\Player2-Controller\Scripts\Movement1.cs" />
   </ItemGroup>
