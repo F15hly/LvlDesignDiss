@@ -11,6 +11,7 @@ TagManager:
   - SpawnP1
   - Player2
   - Spawn
+  - LevelManager
   layers:
   - Default
   - TransparentFX

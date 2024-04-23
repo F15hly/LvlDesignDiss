@@ -31,7 +31,7 @@ public class ScoreTracker : MonoBehaviour
             p1.GetComponent<Player_Managment>().HP = 100;
             Instantiate(heatSigP1, new Vector3(p1.transform.position.x,21, p1.transform.position.z), Quaternion.Euler(0, 0, 0));
         }
-        if(p1Score >= 10 || p2Score >= 10)
+        if(p1Score >= 5 || p2Score >= 5)
         {
             Destroy(p1);
             Destroy(p2);
